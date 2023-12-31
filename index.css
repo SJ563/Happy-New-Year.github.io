@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /* Consistent sizing */
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    height: 600px;
+    width: 900px;
+    border: 2px black solid;
+    margin: 40px auto; /* Center horizontally */
+    border-radius: 50px;
+    background-color: blueviolet;
+    text-align: center; /* Center content */
+  }
+  
+  .display-name h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 50px;
+    color: whitesmoke;
+    user-select: none;
+    margin-top: 100px;
+ 
+  }
+  
+  #user-name,
+  #user-dream-wish {
+    height: 60px;
+    width: 700px;
+    border: 2px solid white;
+    border-radius: 50px;
+    margin: 10px auto;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    padding: 10px; /* Padding for text */
+    text-align: center;
+  }
+  
+  #action-button {
+    height: 40px;
+    width: 400px;
+    border: 2px solid white;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #action-button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  #language-selection {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  #language-select {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  
+  #message-container {
+    margin-top: 20px;
+    color: white;
+    width: 800px;
+    margin-left: 40px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 18px;
+    line-height: 1.5; /* Improve message readability */
+  }
+  
+
+  @media (max-width: 767px) {
+  /* General adjustments for mobile screens */
+  body {
+    font-size: 16px; /* Slightly smaller font for smaller screens */
+  }
+
+  .container {
+    width: 95%; /* Full width on mobile */
+    height:  auto; /* Adjust height automatically */
+    padding: 20px; /* Add padding for better readability */
+  }
+
+  /* Specific adjustments for elements */
+  .display-name h1 {
+    font-size: 24px; /* Adjust font size for smaller screens */
+    margin-top: 20px; /* Reduce top margin */
+  }
+
+  #user-name,
+  #user-dream-wish {
+    width: 100%; /* Full width on mobile */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+  }
+
+  #language-selection {
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+
+  #action-button {
+    width: 100%; /* Full width on mobile */
+    margin-top: 30px;
+  }
+
+  #message-container {
+    width: 100%; /* Full width on mobile */
+    margin-left: 0; /* Remove left margin */
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+}
